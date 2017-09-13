@@ -1,0 +1,39 @@
+<!-- index.html -->
+
+<!doctype html>
+<html lang="ja">
+    <head>
+    <meta charset="UTF-8" />
+        <title>テトリスのクローンゲーム</title>
+    <link rel="stylesheet" href="css/blockrain.css" />
+    <link rel="stylesheet" href="css/milligram.min.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>テトリスwebランキング</h1>
+            
+            <!-- テトリス表示部分 -->
+            <div class = "row">
+            <div class="game column" style="width:300px; height:300px;"> </div>
+            <div class="column">
+                <table>
+                    <tr>
+                        <th>順位</th>
+                        <th>ユーザ名</th>
+                        <th>スコア</th>
+                    </tr>
+                    <script>
+                        for (var i=1;i<=5;i++){
+                            document.write("<tr><td>",i,"</td><td class=\"name",i,"\"></td><td class=\"score",i,"\"></td></tr>");
+                        }
+                    </script>
+                </table>
+            </div>
+            </div>  
+        </div>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/blockrain.jquery.min.js"></script>
+    <script src="https://cdn.mlkcca.com/v0.6.0/milkcocoa.js"></script>
+    <script src="js/app.js"></script>
+    </body>
+</html>
